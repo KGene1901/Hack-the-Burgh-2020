@@ -5,15 +5,19 @@ import time
 from range_key_dict import RangeKeyDict
 
 
-def getLatLng():
+def getLatLng(a, b, attraction):
     # latlondict = RangeKeyDict({(24, 25.25): (54, 55.36): 'DXB', (50, 51.470020): (-0.454295, 0): 'LHR', (39, 40.072498): (115, 116.597504):'PEK',(34, 35.553333): (138, 139.781113): 'HND', (32, 33.942791): (-118.410042, -117): 'LAX'})
-    latlondict = RangeKeyDict({(24, 26): 'DXB', (50, 52): 'LHR', (39, 41): 'PEK', (34, 36): 'HND', (32, 34): 'LAX'})
+    # latlondict = RangeKeyDict({(24, 26): 'DXB', (50, 52): 'LHR', (39, 41): 'PEK', (34, 36): 'HND', (32, 34): 'LAX'})
 
     API_KEY = 'AIzaSyCV-wrawCG8i8cmnmVoecV4M72l1afcjXM'
 
     gmaps = googlemaps.Client(key=API_KEY)
+    type_attr = str(attraction)
+    loca_attr = str(a) + ', ' + str(b)
 
-    places_result = gmaps.places_nearby(location='25.197525, 55.274288', radius=40000, open_now=False, type='airport')
+    # radius in meters
+
+    places_result = gmaps.places_nearby(location=loca_attr, radius=40000, open_now=False, keyword=type_attr)
 
     # pause the script for 3 seconds
     # time.sleep(3)
@@ -27,20 +31,21 @@ def getLatLng():
     for place in places_result['results']:
         # define my latlong
         my_place_id = place['place_id']
-        my_fields = ['geometry/location/lat', 'geometry/location/lng']
+        my_fields = ['geometry/location/lat', 'geometry/location/lng', 'name', 'rating']
         place_details = gmaps.place(place_id=my_place_id, fields=my_fields)
         # print(place_details)
-        lat = round(place_details['result']['geometry']['location']['lat'], 2)
-        long = str(round(place_details['result']['geometry']['location']['lng'], 2))
+        lat = (place_details['result']['geometry']['location']['lat'])
+        long = (place_details['result']['geometry']['location']['lng'])
+        name = str(place_details['result']['name'])
+        rating = float(place_details['result']['rating'])
+
         # cords = lat + ', ' + long
         # print(cords)
-        print(place_details['result']['geometry']['location']['lat'])
+        # print(place_details['result']['geometry']['location']['lat'])
 
-        #print(latlondict[lat])
-
-        if latlondict[lat] == latlondict[lat]:
-
-            return latlondict[lat]
+        # print(latlondict[lat])
+        if lat == lat:
+            return lat, long, name, rating
 
 
-getLatLng()
+print(getLatLng(25.197525, 55.274288, 'beach'))

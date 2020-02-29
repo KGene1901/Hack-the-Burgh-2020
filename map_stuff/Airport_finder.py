@@ -1,10 +1,11 @@
 import requests
 
 
-def airport_code(a,b,c):
+def airport_code():
     url = "https://cometari-airportsfinder-v1.p.rapidapi.com/api/airports/by-radius"
 
-    querystring = {"radius": "50", "lng": "-157.895277", "lat": "21.265600"}
+    # radius in km
+    querystring = {"radius": "100", "lng": "-155.895277", "lat": "21.265600"}
 
     headers = {
         'x-rapidapi-host': "cometari-airportsfinder-v1.p.rapidapi.com",
