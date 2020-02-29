@@ -8,4 +8,9 @@ class User(db.Model):
     point_total = db.Column(db.Integer)
 
     def __repr__(self):
-        return '<User {}>'.format(self.username)    
+        return '<User {}>'.format(self.username)
+class Airport(db.Model):
+    Airport_Name = db.Column(db.String(3), primary_key=True)
+    Description = db.Column(db.String)  
+    def __repr__(self):
+        return '<Airport {}>'.format(self.Airport_Name)  
