@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d0edd384-e4d6-4c16-8c07-378f3542cbbd" name="Default Changelist" comment="">
+<<<<<<< Updated upstream
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/google_maps/google_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/google_maps/google_api.py" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/user_location.py" beforeDir="false" afterPath="$PROJECT_DIR$/user_location.py" afterDir="false" />
+>>>>>>> Stashed changes
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1YUKFATZwqpnC74VnRBPWDKg5r2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+<<<<<<< Updated upstream
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="Python.user_location">
+>>>>>>> Stashed changes
+    <configuration name="google_api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Hack-the-Burgh-2020" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/google_maps" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/google_maps/google_api.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+<<<<<<< Updated upstream
+    <recent_temporary>
+      <list>
+=======
+    <configuration name="user_location" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Hack-the-Burgh-2020" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/user_location.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.user_location" />
+>>>>>>> Stashed changes
+        <item itemvalue="Python.google_api" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d0edd384-e4d6-4c16-8c07-378f3542cbbd" name="Default Changelist" comment="" />
+      <created>1582991627177</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582991627177</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+<<<<<<< Updated upstream
+    <state width="1252" height="181" key="GridCell.Tab.0.bottom" timestamp="1582998491646">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1252" height="181" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1582998491646" />
+    <state width="1252" height="181" key="GridCell.Tab.0.center" timestamp="1582998491645">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1252" height="181" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1582998491645" />
+    <state width="1252" height="181" key="GridCell.Tab.0.left" timestamp="1582998491644">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1252" height="181" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1582998491644" />
+    <state width="1252" height="181" key="GridCell.Tab.0.right" timestamp="1582998491645">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1252" height="181" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1582998491645" />
+=======
+    <state width="1252" height="291" key="GridCell.Tab.0.bottom" timestamp="1583000959064">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1252" height="291" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1583000959064" />
+    <state width="1252" height="291" key="GridCell.Tab.0.center" timestamp="1583000959063">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1252" height="291" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1583000959063" />
+    <state width="1252" height="291" key="GridCell.Tab.0.left" timestamp="1583000959062">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1252" height="291" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1583000959062" />
+    <state width="1252" height="291" key="GridCell.Tab.0.right" timestamp="1583000959063">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1252" height="291" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1583000959063" />
+>>>>>>> Stashed changes
+    <state x="632" y="353" key="com.intellij.ide.util.TipDialog" timestamp="1582995655800">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="632" y="353" key="com.intellij.ide.util.TipDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1582995655800" />
+  </component>
+</project>
