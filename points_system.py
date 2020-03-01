@@ -1,7 +1,7 @@
 import requests
 import random
 
-details = {'OriDest':'LHR', 'InitDest':'HKG', 'AltDest':'DXB'} # sample location
+#details = {'OriDest':'LHR', 'InitDest':'HKG', 'AltDest':'DXB'} # sample location
 
 CF = [{'item':'beef', 'amt':36.4}, {'item':'cheese', 'amt':13.5}, {'item':'chicken', 'amt':6.9}, {'item':'black coffee', 'amt':0.021}, {'item':'dairy milk', 'amt':1.4}, {'item':'wood', 'amt':0.4}]
 
@@ -44,9 +44,9 @@ def compareCO2(headers, details):
 
     return round(scoring(CO2_saved),0)
 
-if __name__ == "__main__":
-    bonusPt = compareCO2(headers, details)
-    print('Bonus point earned:', bonusPt)
+# if __name__ == "__main__":
+    # bonusPt = compareCO2(headers, details)
+    # print('Bonus point earned:', bonusPt)
 
         
 
