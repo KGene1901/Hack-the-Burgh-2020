@@ -2,11 +2,11 @@ from flask import Flask
 from app import app
 from flask import render_template, flash, redirect, url_for
 from app.forms import LoginForm
-from flask_login import current_user, login_user
+from flask_login import current_user, login_user, LoginManager
 from app.models import User
+from flask_login import LoginManager
 
-
-
+login = LoginManager(app)
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'h'
 
