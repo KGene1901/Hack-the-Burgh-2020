@@ -31,18 +31,35 @@ def scoring(score):
     return bonusPt
 
 def compareCO2(headers, details):
-    params = (('routes', details['OriDest']+','+details['InitDest']+';'+ details['OriDest']+','+details['AltDest']),)
+    if details['OriDest'] == details['AltDest']:
+        
+        params = (('routes', details['OriDest']+','+details['InitDest']),)
 
-    response = requests.get('https://www.skyscanner.net/g/chiron/api/v1/eco/average-emissions', headers=headers, params=params)
+        response = requests.get('https://www.skyscanner.net/g/chiron/api/v1/eco/average-emissions', headers=headers, params=params)
 
-    r =response.json()
+        r =response.json()
 
-    CO2_saved = r[1]['emissions'] - r[0]['emissions']
+        CO2_saved = r[0]['emissions']
+        
+        print("Congratulations, you saved {} kg of CO2 emissions".format(round(CO2_saved, 3)))
+        compareCF(CO2_saved)
 
-    print("Congratulations, you saved {} kg of CO2 emissions".format(round(CO2_saved, 3)))
-    compareCF(CO2_saved)
+        return round(scoring(CO2_saved),0)
 
-    return round(scoring(CO2_saved),0)
+    else:
+
+        params = (('routes', details['OriDest']+','+details['InitDest']+';'+ details['OriDest']+','+details['AltDest']),)
+
+        response = requests.get('https://www.skyscanner.net/g/chiron/api/v1/eco/average-emissions', headers=headers, params=params)
+
+        r =response.json()
+
+        CO2_saved = r[1]['emissions'] - r[0]['emissions']
+
+        print("Congratulations, you saved {} kg of CO2 emissions".format(round(CO2_saved, 3)))
+        compareCF(CO2_saved)
+
+        return round(scoring(CO2_saved),0)
 
 # if __name__ == "__main__":
     # bonusPt = compareCO2(headers, details)
