@@ -5,6 +5,8 @@ from app.forms import LoginForm
 from flask_login import current_user, login_user
 from app.models import User
 
+
+
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'h'
 
