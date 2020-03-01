@@ -5,7 +5,7 @@ import time
 from range_key_dict import RangeKeyDict
 
 
-def getLatLng(a, b, attraction):
+def getLatLngattr(a, b, attraction):
     # latlondict = RangeKeyDict({(24, 25.25): (54, 55.36): 'DXB', (50, 51.470020): (-0.454295, 0): 'LHR', (39, 40.072498): (115, 116.597504):'PEK',(34, 35.553333): (138, 139.781113): 'HND', (32, 33.942791): (-118.410042, -117): 'LAX'})
     # latlondict = RangeKeyDict({(24, 26): 'DXB', (50, 52): 'LHR', (39, 41): 'PEK', (34, 36): 'HND', (32, 34): 'LAX'})
 
@@ -48,4 +48,4 @@ def getLatLng(a, b, attraction):
             return lat, long, name, rating
 
 
-print(getLatLng(25.197525, 55.274288, 'beach'))
+#print(getLatLngattr(25.197525, 55.274288, 'beach'))
