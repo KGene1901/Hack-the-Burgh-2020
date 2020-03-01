@@ -1,16 +1,15 @@
 from flask import Flask
-from flask import render_template, flash,redirect
-from forms import LoginForm
+from app import app
+from flask import render_template, flash, redirect, url_for
+from app.forms import LoginForm
 from flask_login import current_user, login_user
-from models import User
-
-
+from app.models import User
 
 app = Flask(__name__)
-app.config['SECRET_KEY']='h'
+app.config['SECRET_KEY'] = 'h'
 
 
-@app.route('/login', methods=['GET','POST'])
+@app.route('/login', methods=['GET', 'POST'])
 def login():
     if current_user.is_authenticated:
         return redirect('/index')
@@ -24,10 +23,12 @@ def login():
         return redirect(url_for('index'))
     return render_template('login.html', title='Sign In', form=form)
 
+
 @app.route("/")
 @app.route('/index')
 def hell():
     return 'Hello World!'
+
 
 if __name__ == '__main__':
     app.run()
