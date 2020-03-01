@@ -2,9 +2,13 @@ import sys
 from map_stuff.google_api_attraction import getLatLngattr
 from map_stuff.google_api_airport import getLatLng
 from points_system import *
+from user_location import *
 
-current_lat = str(25.197525)
-current_lng = str(55.274288)
+# current_lat = str(25.197525)
+# current_lng = str(55.274288)
+
+current_lat = str(lati)
+current_lng = str(longi)
 loca = current_lat + ', ' + current_lng
 
 # Gets original location (location's lat and lng come from gene user_location.
@@ -25,7 +29,6 @@ Alt_dest = getLatLng(alt_loca)
 
 # creates dictionary
 details = {'OriDest': ori_loca, 'InitDest': init_dest, 'AltDest': Alt_dest}
-print(details)
 
 # initiate point system
 if __name__ == "__main__":
