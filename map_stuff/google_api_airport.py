@@ -9,7 +9,7 @@ def getLatLng(loca):
     # latlondict = RangeKeyDict({(24, 25.25): (54, 55.36): 'DXB', (50, 51.470020): (-0.454295, 0): 'LHR', (39, 40.072498): (115, 116.597504):'PEK',(34, 35.553333): (138, 139.781113): 'HND', (32, 33.942791): (-118.410042, -117): 'LAX'})
     latlondict = RangeKeyDict({(24, 26): 'DXB', (50, 52): 'LHR', (39, 41): 'PEK', (34, 36): 'HND', (32, 34): 'LAX', (54, 56): 'EDI'})
 
-    API_KEY = 'AIzaSyCV-wrawCG8i8cmnmVoecV4M72l1afcjXM'
+    API_KEY = {'INSERT API KEY'}
 
     gmaps = googlemaps.Client(key=API_KEY)
 

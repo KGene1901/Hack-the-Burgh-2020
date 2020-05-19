@@ -9,7 +9,7 @@ def airport_code():
 
     headers = {
         'x-rapidapi-host': "cometari-airportsfinder-v1.p.rapidapi.com",
-        'x-rapidapi-key': "19a813ff35msha07d84d5202193bp1e8617jsn848f379b75e4"
+        'x-rapidapi-key': {'INSERT API KEY'}
     }
 
     response = requests.request("GET", url, headers=headers, params=querystring)
